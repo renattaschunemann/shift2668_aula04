@@ -28,7 +28,7 @@ public class TeacherHelper {
                     System.out.println("Para calcular seu salário base precisamos saber quantas aulas semanais o professor tem na instituição");
                     numeroAulas = leitor.nextInt();
                     System.out.println("Qual o valor praticado pela escola:");
-                    horaAula = leitor.nextDouble()
+                    horaAula = leitor.nextDouble();
                     salarioBase = numeroAulas * 4.5 * horaAula;
                     horaAtividade = salarioBase * 0.05;
                     descansoSemanalRemunerado = (salarioBase + horaAtividade) / 6;
@@ -50,7 +50,9 @@ public class TeacherHelper {
                         System.out.println("Digite a nota do " + (i+1) + "º aluno:");
                         notaAluno = leitor.nextDouble();
                         mediaAlunos = mediaAlunos + notaAluno;
+                        i++;
                     }
+
                     mediaAlunos = mediaAlunos / qtdeAlunos;
                     System.out.println("A média de notas dos alunos dessa turma é " + mediaAlunos);
 
