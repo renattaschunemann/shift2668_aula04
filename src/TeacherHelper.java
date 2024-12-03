@@ -8,7 +8,7 @@ public class TeacherHelper {
         int opcao=0, numeroAulas, qtdeAlunos, i;
         double salarioBase, horaAtividade, descansoSemanalRemunerado, salario, notaAluno, mediaAlunos;
         double horaAula;
-        char aulaNormal;
+
 
         Random gerador = new Random();
 
