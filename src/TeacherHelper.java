@@ -52,7 +52,7 @@ public class TeacherHelper {
                         System.out.println("Digite a nota do " + (i+1) + "º aluno:");
                         notaAluno = leitor.nextDouble();
                         mediaAlunos = mediaAlunos + notaAluno;
-                        i++;
+                        i++; //incremento
                     }
 
                     mediaAlunos = mediaAlunos / qtdeAlunos;
@@ -62,6 +62,8 @@ public class TeacherHelper {
                 case 3:
 
                     switch(gerador.nextInt(7)) {
+                        case 0:
+                            System.out.println("Não a bug que não possa ser superado");
                         case 1:
                             System.out.println("Você é um professor incrível!");
                             break;
